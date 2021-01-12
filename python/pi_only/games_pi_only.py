@@ -12,7 +12,7 @@ from PIL import Image
 
 
 # If Pi = False the script runs in simulation mode using pygame lib
-PI = True
+PI = False
 import pygame
 from pygame.locals import *
 if PI:
