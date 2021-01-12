@@ -1,5 +1,7 @@
 import  os,time
 
+import pygame as pygame
+
 os.environ["SDL_VIDEODRIVER"] = "dummy" #dummy display for pygame audio
 import pygame
 from pygame.locals import *
