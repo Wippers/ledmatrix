@@ -1063,9 +1063,9 @@ def drawnumber(number,offsetx,offsety,color):
     for x in range(0,3):
         for y in range(0,5):
             if clock_font[3*number + x]&mask[y]:
-                drawPixel(offsetx+x,offsety+y,color)
+                drawPixel(offsetx+x, offsety+y, color)
 
-def drawnumberMAX7219(number,offsetx,offsety,draw1):
+def drawnumberMAX7219(number, offsetx, offsety, draw1):
     for x in range(0,3):
         for y in range(0,5):
             if clock_font[3*number+2- x]&mask[y]:
