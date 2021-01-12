@@ -5,6 +5,8 @@
 import random, time, pygame, sys, socket
 from pygame.locals import *
 
+from python.games_pi import TEXTCOLOR, TEXTSHADOWCOLOR
+
 FPS = 25
 WINDOWWIDTH = 640
 WINDOWHEIGHT = 480
