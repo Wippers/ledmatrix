@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/venv" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/luma-2.1.0.dist-info" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (ledmatrix)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
