@@ -10,7 +10,7 @@
 import random, time, sys, socket, threading, queue, socketserver, os
 from PIL import Image
 
-# If Pi = False the script runs in simulation mode using pygame lib test
+# If Pi = False the script runs in simulation mode using pygame lib
 PI = False
 import pygame
 from pygame.locals import *
