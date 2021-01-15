@@ -28,6 +28,7 @@ if PI:
     from luma.core.legacy.font import proportional, CP437_FONT, TINY_FONT, SINCLAIR_FONT, LCD_FONT
 
 # only modify this two values for size adaption!
+
 PIXEL_X=10
 PIXEL_Y=20
 
