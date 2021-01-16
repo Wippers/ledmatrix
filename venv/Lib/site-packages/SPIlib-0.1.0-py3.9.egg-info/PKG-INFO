@@ -1,0 +1,49 @@
+Metadata-Version: 1.0
+Name: SPIlib
+Version: 0.1.0
+Summary: A small library to use the SPIdev linux interface
+Home-page: http://pypi.python.org/pypi/SPIlib/
+Author: Stefano Cavallari
+Author-email: spiky.kiwi@gmail.com
+License: Public Domain (WTFPL2)
+Description: ==========
+        SPIlib
+        ==========
+        
+        SPIlib is a thin wrapper to interact with SPI devices using the Linux
+        "SPIdev" interface [#Spidev]_
+        
+        See the accelerometer example in the examples directory.
+        
+        
+        Usage
+        =====
+        
+        Usage is quite simple.
+        First you have to build a Transfer::
+        
+            from spi import spi_transfer, SPIDev
+            transfer, buf, _ = spi_transfer(chr(0x1b), readlen=0)
+        
+        This prepares a transfer which sends one byte (first parameter) and reads none
+        (second parameter).
+        It returns binary data which is then passed to SPIDev (the transfer buffer, the
+        write buffer and the read buffer, the last ignored in the example).
+        It is possible to change the write and read buffer beetween transfers (without
+        altering their lenght of course!).
+        
+        To actually do the transfer use do_transfer::
+        
+            myspidev = SPIDev('/dev/spidev0.0')
+            myspidev.do_transfers([transfer])
+        
+        do_transfers takes a list of transfers to do in a single "session", maintaining
+        the device selected.
+        For examples by using three transfers you can write one byte, read and write
+        one at the same time.
+        Note that it is not possible to interact with data during a single "session"
+        because of a limit of the Linux SPIDev interface (and thus of this interface)
+        
+        .. [#Spidev] http://www.kernel.org/doc/Documentation/spi/spidev
+        
+Platform: UNKNOWN

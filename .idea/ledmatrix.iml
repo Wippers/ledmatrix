@@ -5,6 +5,10 @@
       <sourceFolder url="file://$MODULE_DIR$/venv" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/luma-2.1.0.dist-info" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/canvas-0.2-py3.9.egg-info" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/pip-20.3.3.dist-info" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/pygame-2.0.1.dist-info" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (ledmatrix)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
